@@ -127,3 +127,90 @@ header h1 {
 .submit-btn:hover {
     background-color: #2980b9;
 }
+
+.oculto {
+    display: none !important;
+}
+
+/* Barra de progreso y temporizador */
+.barra {
+    background: #dde3e8;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+#progreso {
+    background: #3498db;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+#tiempo.urgente {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* Retroalimentación */
+.respuestas-list label.correcta {
+    background-color: #dcfce7 !important;
+    border-color: #16a34a !important;
+    color: #166534;
+}
+
+.respuestas-list label.incorrecta {
+    background-color: #fee2e2 !important;
+    border-color: #dc2626 !important;
+    color: #991b1b;
+}
+
+.mensaje {
+    min-height: 26px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.submit-btn:disabled {
+    background-color: #b6c2cc;
+    cursor: not-allowed;
+}
+
+/* Resultados */
+.resultado {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#puntaje {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+#detalle {
+    list-style: none;
+    text-align: left;
+    margin: 18px 0;
+}
+
+#detalle li {
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    background: #f3f4f6;
+    font-size: 0.95rem;
+}
